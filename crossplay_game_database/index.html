@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossplay Multiplayer Games Database</title>
+    <link rel = "stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Crossplay Multiplayer Games Database</h1>
+<p>Find games that you can play across multiple platforms!</p>
+
+<form id = "searchForm">
+    <h2>Search for a Game</h2>
+    
+    <label>Select Genre: </label>
+    <select name="genre" id = "genre">
+        <option value="all">All Genres</option>
+        <option value="horror">Horror</option>
+        <option value="sport">Sports</option>
+        <option value="openworld">Open World</option>
+        <option value="action">Action</option>
+        <option value="simulation">Simulation</option>
+        <option value="mmo">MMORPG</option>
+        <option value="fps">FPS</option>
+    </select>
+
+    <div class="platforms">
+        <div class="platform-group">
+            <h3>Xbox Devices</h3>
+            <input type="checkbox" id="platform" name="platform" value="xbox-one"> Xbox One<br>
+            <input type="checkbox" id="platform" name="platform" value="xbox-one-s"> Xbox One S<br>
+            <input type="checkbox" id="platform" name="platform" value="xbox-one-x"> Xbox One X<br>
+            <input type="checkbox" id="platform" name="platform" value="xbox-series-s"> Xbox Series S<br>
+            <input type="checkbox" id="platform" name="platform" value="xbox-series-x"> Xbox Series X<br>
+        </div>
+
+        <div class="platform-group">
+            <h3>PlayStation Devices</h3>
+            <input type="checkbox" id="platform" name="platform" value="ps4"> PlayStation 4<br>
+            <input type="checkbox" id="platform" name="platform" value="ps5"> PlayStation 5<br>
+        </div>
+
+        <div class="platform-group">
+            <h3>Other Platforms</h3>
+            <input type="checkbox" id="platform" name="platform" value="pc"> PC/Windows<br>
+            <input type="checkbox" id="platform" name="platform" value="mac"> Mac<br>
+            <input type="checkbox" id="platform" name="platform" value="ios"> iOS<br>
+            <input type="checkbox" id="platform" name="platform" value="android"> Android<br>
+            <input type="checkbox" id="platform" name="platform" value="switch"> Nintendo Switch<br>
+        </div>
+    </div>
+
+    <br>
+    <input type="submit" name = "searchBtn" value="Search">
+</form>
+
+<div id = "gamesList"></div>
+<script src = "js/script.js"></script>
+</body>
+</html>
